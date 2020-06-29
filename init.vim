@@ -1,29 +1,30 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source ~/MySettings/vim/plugins.vim
+source ~/.config/vimme/plugins.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key Bindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vs Code.
-source ~/MySettings/vim/vscode/.vimrc
+source ~/.config/vimme/vscode/.vimrc
 " Neovim.
-source ~/MySettings/vim/keybindings.vim
+source ~/.config/vimme/keybindings.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General settings.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source ~/MySettings/vim/general.vim
+source ~/.config/vimme/general.vim
+source ~/.config/vimme/file_assocs.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source ~/MySettings/vim/plugins/nerdtree.vim
-source ~/MySettings/vim/plugins/coc.vim
+source ~/.config/vimme/plugins/nerdtree.vim
+source ~/.config/vimme/plugins/coc.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source ~/MySettings/vim/functions.vim
+source ~/.config/vimme/functions.vim
 
