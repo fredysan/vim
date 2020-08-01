@@ -2,6 +2,11 @@
 
 ## Instalation:
 
+### Clone this repo
+```bash
+$ git clone git@github.com:fredysan/vim.git ~/.config/vimme
+```
+
 ### Neovim
 
 Add the next line to the `~/.config/nvim/init.vim` file.

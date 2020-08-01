@@ -31,5 +31,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'yuki-ycino/fzf-preview.vim'
 
   Plug 'ap/vim-css-color'
+  Plug 'voldikss/vim-floaterm'
 call plug#end()
 

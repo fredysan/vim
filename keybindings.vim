@@ -11,7 +11,8 @@ map <leader>j :bnext<cr>
 map <leader>k :bprevious<cr>
 
 " use FZF as ctrl-p
-nnoremap <c-p> :FZF<cr>
+nnoremap <c-p> :FzfPreviewGitFiles<cr>
+nnoremap <leader>b :FzfPreviewBuffers<cr>
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
@@ -24,11 +25,16 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
+map <leader>q :Bclose<cr>
 map <leader>qq :q<cr>
 
 nmap <leader>f :Ag 
 map <silent> <leader>/ :execute 'vimgrep /'.@/.'/g %'<cr>:copen<cr>
 
+" Float terminal
+let g:floaterm_keymap_toggle = '<F4>'
+nnoremap   <silent>   <F4> :FloatermToggle<CR>
+tnoremap   <silent>   <F4> <C-\><C-n>:FloatermToggle<CR>
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
@@ -57,3 +63,11 @@ inoremap <C-r>n <C-r>=expand('%:t:r')<CR>
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
+
+" Case insensitive search.
+nmap / /\c
+nmap <leader>s /
+
+" Open current buffer in a vertical split.
+nmap <leader>vs :vs<CR>
+
